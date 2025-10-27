@@ -3,7 +3,7 @@ import 'dotenv/config'
 import express, { type NextFunction, type Request, type Response } from 'express'
 import rateLimit from 'express-rate-limit'
 import { LRUCache } from 'lru-cache'
-import { sendToTelegram, type OrderPayload } from './telegram'
+import { sendToTelegram, type OrderPayload } from './telegram.js'
 
 const app = express()
 
